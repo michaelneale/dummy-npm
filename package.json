@@ -4,7 +4,7 @@
   "description": "just for fun",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"this is just a test\" && exit 0"
   },
   "repository": {
     "type": "git",
