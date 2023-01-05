@@ -4,7 +4,8 @@
   "description": "just for fun",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"this is just a test\" && exit 0"
+    "test": "echo \"this is just a test\" && exit 0",
+    "publish:unstable": "npm version --no-git-tag-version --patch && npm version $(node -pe \"require('./package.json').version\") --no-git-tag-version && npm publish --tag unstable --no-git-tag-version && git checkout -- package.json"
   },
   "repository": {
     "type": "git",
