@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"this is just a test\" && exit 0",
-    "publish:unstable": "npm version --no-git-tag-version --patch && npm version $(node -pe \"require('./package.json').version\") --no-git-tag-version && npm publish --tag unstable --no-git-tag-version && git checkout -- package.json"
+    "publish:unstable": "npm version patch && npm --no-git-tag-version version $(npm --no-git-tag-version version)+$(date +'%Y-%m-%d_%H_%M_%S') && npm publish --tag unstable"
   },
   "repository": {
     "type": "git",
