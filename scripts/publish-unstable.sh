@@ -16,7 +16,7 @@ npm version --no-git-tag-version --patch
 new_version=$(node -pe "require('./package.json').version")
 
 # Fetch the new unstable version
-new_unstable_version=$new_version"-unstable.$(git rev-parse --short HEAD).$(date +'%Y_%m_%d_%H_%M_%S')"
+new_unstable_version=$new_version"-unstable.$(git rev-parse --short HEAD)"
 
 # Set the unstable version in the package.json
 npm version $new_unstable_version --no-git-tag-version
