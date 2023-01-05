@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"this is just a test\" && exit 0",
-    "publish:unstable": "npm version patch && npm --no-git-tag-version version $(npm version patch)_unstable_$(date +'%Y-%m-%d_%H_%M_%S') && npm publish --tag unstable"
+    "publish:unstable": "npm version patch && npm --no-git-tag-version version $(npm version patch)_unstable_$(date +'%Y_%m_%d_%H_%M_%S') && npm publish --tag unstable"
   },
   "repository": {
     "type": "git",
